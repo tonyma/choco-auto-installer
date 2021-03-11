@@ -1,0 +1,17 @@
+visualstudio2019professional
+jetbrains-rider
+docker-desktop
+sql-server-management-studio
+powerbi
+dotnetfx
+dotnetcore-sdk
+dotnet-5.0-sdk
+gitextensions
+git-credential-manager-for-windows
+nodejs
+yarn
+postman
+powershell-core
+python3
+r.studio
+anaconda3

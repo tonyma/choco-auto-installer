@@ -1,0 +1,6 @@
+googlechrome
+googlechrome.canary
+microsoft-edge-insider-dev
+sublimetext3
+vscode
+vscode-insiders
