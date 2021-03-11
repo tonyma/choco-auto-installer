@@ -30,15 +30,10 @@ function Get-Commands{
 }
 
 function Install-Apps([PSObject]$command){
-    Write-Host $command.Name
-    Write-Host $command.Command
-    Write-Host $command.Content
-    Write-Host $command.Message
     if ($command.Command) {
-        Write-Host "Command: " $commands.Command
         Invoke-Expression $command.Command
-        if ($commands.Message) {
-            Write-Host -ForegroundColor red $commands.Message
+        if ($command.Message) {
+            Write-Host -ForegroundColor red $command.Message
         }
     }elseif ($command.Content) {
         $apps = $command.Content.split(" ")
