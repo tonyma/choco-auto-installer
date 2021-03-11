@@ -16,6 +16,10 @@ function Get-Commands{
                         Command = "choco upgrade chocolatey -y"
                         Message = "You need to restart the PowerShell"}
 
+    $commands+= New-Object -TypeName PSObject -Property @{
+                        Name = "Upgrade all apps"
+                        Command = "choco upgrade all -y"}
+
     Get-ChildItem $PSScriptRoot -Filter *.txt | 
         Foreach-Object {
                 $commands+= New-Object -TypeName PSObject -Property @{
