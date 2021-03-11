@@ -9,12 +9,16 @@ function Get-Commands{
     $commands+= New-Object -TypeName PSObject -Property @{
                         Name = "Install Chocolatey"
                         Command = "Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
-                        Message = "You need to restart the PowerShell"}
+                        Message = "You may need to restart the PowerShell"}
 
     $commands+= New-Object -TypeName PSObject -Property @{
                         Name = "Upgrade Chocolatey"
                         Command = "choco upgrade chocolatey -y"
-                        Message = "You need to restart the PowerShell"}
+                        Message = "You may need to restart the PowerShell"}
+
+    $commands+= New-Object -TypeName PSObject -Property @{
+                        Name = "Upgrade all apps"
+                        Command = "choco upgrade all -y"}
 
     Get-ChildItem $PSScriptRoot -Filter *.txt | 
         Foreach-Object {
