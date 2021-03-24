@@ -1,7 +1,7 @@
 visualstudio2019professional
 jetbrains-rider
 docker-desktop
-sql-server-management-studio
+azure-data-studio
 powerbi
 dotnetfx
 dotnetcore-sdk
