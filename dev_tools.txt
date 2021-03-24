@@ -8,6 +8,7 @@ dotnetcore-sdk
 dotnet-5.0-sdk
 gitextensions
 git-credential-manager-for-windows
+kdiff3
 nodejs
 yarn
 postman
