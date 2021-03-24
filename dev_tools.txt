@@ -6,6 +6,7 @@ powerbi
 dotnetfx
 dotnetcore-sdk
 dotnet-5.0-sdk
+git
 gitextensions
 git-credential-manager-for-windows
 kdiff3
