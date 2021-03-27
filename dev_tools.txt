@@ -17,3 +17,4 @@ powershell-core
 python3
 r.studio
 anaconda3
+cmder
